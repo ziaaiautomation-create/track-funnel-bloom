@@ -8,7 +8,7 @@ import { Crown, Clock, BookOpen, Dumbbell, Phone, Video, Film, Trophy, Moon, Sen
 
 const WEBHOOK_URL = "https://appointfunnels11.app.n8n.cloud/webhook-test/appointfunnels.com";
 
-const fields = [
+const fields: { key: string; label: string; icon: typeof Clock; type: string; placeholder: string; step?: string }[] = [
   { key: "hoursWorked", label: "Hours Worked", icon: Clock, type: "number", placeholder: "e.g. 10", step: "0.5" },
   { key: "pagesRead", label: "Pages Read", icon: BookOpen, type: "number", placeholder: "e.g. 25" },
   { key: "pushups", label: "Pushups", icon: Dumbbell, type: "number", placeholder: "e.g. 100" },
@@ -16,7 +16,7 @@ const fields = [
   { key: "longFormShoots", label: "Long Form Content Shoots", icon: Video, type: "number", placeholder: "e.g. 1" },
   { key: "shortFormShoots", label: "Short Form Content Shoots", icon: Film, type: "number", placeholder: "e.g. 5" },
   { key: "sleepHours", label: "Sleep (hours)", icon: Moon, type: "number", placeholder: "e.g. 7.5", step: "0.5" },
-] as const;
+];
 
 const Index = () => {
   const [loading, setLoading] = useState(false);
