@@ -22,6 +22,11 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        gold: {
+          DEFAULT: "hsl(var(--primary))",
+          deep: "hsl(var(--gold-deep))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
