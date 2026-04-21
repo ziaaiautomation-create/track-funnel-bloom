@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { toast } from "@/hooks/use-toast";
 import { Crown, Clock, BookOpen, Dumbbell, Phone, Video, Film, Trophy, Moon, Send } from "lucide-react";
 
-const WEBHOOK_URL = "https://appointfunnels11.app.n8n.cloud/webhook-test/appointfunnels.com";
+const WEBHOOK_URL = "https://appointfunnels11.app.n8n.cloud/webhook/appointfunnels.com";
 
 const fields: { key: string; label: string; icon: typeof Clock; type: string; placeholder: string; step?: string }[] = [
   { key: "hoursWorked", label: "Hours Worked", icon: Clock, type: "number", placeholder: "e.g. 10", step: "0.5" },
