@@ -93,7 +93,6 @@ const Index = () => {
                   placeholder={placeholder}
                   value={form[key]}
                   onChange={(e) => update(key, e.target.value)}
-                  required
                   maxLength={200}
                   className="bg-input/60 border-border focus-visible:ring-gold focus-visible:border-gold h-11"
                 />
@@ -111,7 +110,6 @@ const Index = () => {
               placeholder="What did you ship, win, or break through today?"
               value={form.milestones}
               onChange={(e) => update("milestones", e.target.value)}
-              required
               rows={4}
               maxLength={1000}
               className="bg-input/60 border-border focus-visible:ring-gold focus-visible:border-gold resize-none"
