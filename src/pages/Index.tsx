@@ -8,14 +8,14 @@ import { Crown, Clock, BookOpen, Dumbbell, Phone, Video, Film, Trophy, Moon, Sen
 
 const WEBHOOK_URL = "https://appointfunnels11.app.n8n.cloud/webhook/appointfunnels.com";
 
-const fields: { key: string; label: string; icon: typeof Clock; type: string; placeholder: string; step?: string }[] = [
-  { key: "hoursWorked", label: "Hours Worked", icon: Clock, type: "number", placeholder: "e.g. 10", step: "0.5" },
-  { key: "pagesRead", label: "Pages Read", icon: BookOpen, type: "number", placeholder: "e.g. 25" },
-  { key: "pushups", label: "Pushups", icon: Dumbbell, type: "number", placeholder: "e.g. 100" },
-  { key: "coldCalls", label: "Cold Calls Done Today", icon: Phone, type: "number", placeholder: "e.g. 50" },
-  { key: "longFormShoots", label: "Long Form Content Shoots", icon: Video, type: "number", placeholder: "e.g. 1" },
-  { key: "shortFormShoots", label: "Short Form Content Shoots", icon: Film, type: "number", placeholder: "e.g. 5" },
-  { key: "sleepHours", label: "Sleep (hours)", icon: Moon, type: "number", placeholder: "e.g. 7.5", step: "0.5" },
+const fields: { key: string; label: string; icon: typeof Clock; placeholder: string }[] = [
+  { key: "hoursWorked", label: "Hours Worked", icon: Clock, placeholder: "e.g. 10 hrs" },
+  { key: "pagesRead", label: "Pages Read", icon: BookOpen, placeholder: "e.g. 25 pages" },
+  { key: "pushups", label: "Pushups", icon: Dumbbell, placeholder: "e.g. 100 reps" },
+  { key: "coldCalls", label: "Cold Calls Done Today", icon: Phone, placeholder: "e.g. 50 calls" },
+  { key: "longFormShoots", label: "Long Form Content Shoots", icon: Video, placeholder: "e.g. 1 video" },
+  { key: "shortFormShoots", label: "Short Form Content Shoots", icon: Film, placeholder: "e.g. 5 reels" },
+  { key: "sleepHours", label: "Sleep (hours)", icon: Moon, placeholder: "e.g. 7.5 hrs" },
 ];
 
 const Index = () => {
