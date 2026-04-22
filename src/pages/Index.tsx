@@ -93,7 +93,6 @@ const Index = () => {
                   placeholder={placeholder}
                   value={form[key]}
                   onChange={(e) => update(key, e.target.value)}
-                  required
                   maxLength={200}
                   className="bg-input/60 border-border focus-visible:ring-gold focus-visible:border-gold h-11"
                 />
