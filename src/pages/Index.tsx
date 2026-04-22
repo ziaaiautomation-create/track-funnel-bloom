@@ -81,7 +81,7 @@ const Index = () => {
           style={{ animationDelay: "0.15s", opacity: 0 }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {fields.map(({ key, label, icon: Icon, type, placeholder, step }) => (
+            {fields.map(({ key, label, icon: Icon, placeholder }) => (
               <div key={key} className="space-y-2">
                 <Label htmlFor={key} className="flex items-center gap-2 text-sm font-medium text-foreground/90">
                   <Icon className="w-4 h-4 text-gold" />
@@ -89,13 +89,12 @@ const Index = () => {
                 </Label>
                 <Input
                   id={key}
-                  type={type}
-                  step={step}
-                  min="0"
+                  type="text"
                   placeholder={placeholder}
                   value={form[key]}
                   onChange={(e) => update(key, e.target.value)}
                   required
+                  maxLength={200}
                   className="bg-input/60 border-border focus-visible:ring-gold focus-visible:border-gold h-11"
                 />
               </div>
